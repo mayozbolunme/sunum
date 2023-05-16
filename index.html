@@ -325,31 +325,9 @@ li label {
             </ul>
             <button type="submit" class="btn btn-secondary next">Sonraki</button>
           </div>
+          
           <div class="question">
             <h5>Soru 5:</h5>
-            <p>Mayoz bölünme ile ilgili hangisi doğrudur?</p>
-            <ul>
-              <li>
-                <input type="radio" name="q5" value="a" id="q5a">
-                <label for="q5a">Mayoz bölünme sadece üreme hücrelerinde gerçekleşir. </label>
-              </li>
-              <li>
-                <input type="radio" name="q5" value="b" id="q5b">
-                <label for="q5b">Mayoz bölünme sonucunda oluşan hücrelerin kromozom sayısı, başlangıçtaki hücrenin iki katıdır. </label>
-              </li>
-              <li>
-                <input type="radio" name="q5" value="c" id="q5c">
-                <label for="q5c">Mayoz bölünme sırasında homolog kromozomlar birbirine karışır ve yeni kombinasyonlar oluştururlar. </label>
-              </li>
-              <li>
-                <input type="radio" name="q5" value="d" id="q5d">
-                <label for="q5d">Mayoz bölünme sırasında oluşan hücreler tamamen aynı genetik materyale sahiptirler.</label>
-              </li>
-            </ul>
-            <button type="submit" class="btn btn-secondary next" >Sonraki</button>
-          </div>
-          <div class="question">
-            <h5>Soru 6:</h5>
             <p>Eşeyli üreme ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?</p>
             <ul>
               <li>
@@ -372,7 +350,7 @@ li label {
             <button type="submit" class="btn btn-secondary next">Sonraki</button>
           </div>
           <div class="question">
-            <h5>Soru 7:</h5>
+            <h5>Soru 6:</h5>
             <p>Mayoz hücre bölünmesi sonrasında kalıtsal çeşitliliğin sağlanmış olmasının temel nedeni aşağıdakilerden hangisinde belirtilmiştir?</p>
             <ul>
               <li>
@@ -399,7 +377,7 @@ li label {
           <div id="result"></div>
           <script>
             function showResult() {
-              var answers = ["a", "b", "d", "d", "a","d","c"];
+              var answers = ["a", "b", "d", "d","d","c"];
               var total = 0;
               
               for (var i = 1; i <= 7; i++) {
@@ -422,7 +400,7 @@ li label {
                   }
               }
               
-              document.getElementById("result").innerHTML = "Sonuç: " + total + "/7 doğru";
+              document.getElementById("result").innerHTML = "Sonuç: " + total + "/6 doğru";
 
                 $(".question").addClass('questionshowd').removeClass('question');
                 $(".questionshowd").show();;
